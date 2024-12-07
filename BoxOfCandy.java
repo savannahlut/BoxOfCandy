@@ -1,6 +1,6 @@
 public class BoxOfCandy
 {
-    private Candy[][] box;
+    public Candy[][] box;
 
     /**
     * Moves one piece of candy in column col, if necessary and possible, so that the box
