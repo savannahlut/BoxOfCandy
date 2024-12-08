@@ -33,8 +33,7 @@ public class BoxOfCandy
         {
             for (int col = 0; col < box[0].length ; col++)
             {
-                /* == or .equals? */
-                if (box[row][col].getFlavor() == flavor && box[row][col] != null)
+                if (box[row][col] != null && box[row][col].getFlavor().equals(flavor))
                 {
                     Candy yum = box[row][col];
                     box[row][col] = null;
