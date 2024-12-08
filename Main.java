@@ -37,15 +37,9 @@ public class Main
         System.out.println(" = " + lime);
         System.out.println("Space is now: " + biggerBox.box[1][3]);
 
+        Candy[][] unchanged = biggerBox.box ;
         System.out.print(biggerBox.removeNextByFlavor("grape"));
         System.out.println(" = " + null);
-        System.out.println("Box Unchanged? : ");
-        for (int i = 0; i < biggerBox.box.length ; i++)
-        {
-            for (int j = 0; j < biggerBox.box[0].length ; j++)
-            {
-                System.out.print(biggerBox.box[i][j] + " ");
-            }
-        }
+        System.out.println("Box Unchanged? : " + unchanged.equals(biggerBox.box));
     }
 }
